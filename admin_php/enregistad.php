@@ -29,14 +29,6 @@
                 <img src="../image/Logo.png" alt="">
             </div>
             <div class=" col-md-10">
-                <form action="user.php" method="post">
-                    Nom<input type="text" name="nom" id="" class="inputnom"><br>
-                    Prenom <input type="text" name="prenom" id="" class="inputprenom"><br>
-                    E-mail <input type="email" name="email" id="" class="inputmail"><br>
-                     Passwords<input type="passwords" name="passwords" id="" class="inputpasswords"><br>
-                    confirmer pass <input type="passwords" name="pconf" id="" class="inputpasswords1">
-                    
-                    <button type="submit" value="fermer" name="fermer" id="fermer"><a  class="buton" href="../index.html">Fermer</a></button> 
                 <form action="admin.php" method="post">
                     Nom<input type="text" name="nom" id="" class="inputnom" required=""><br>
                     Prenom <input type="text" name="prenom" id="" class="inputprenom" required><br>
