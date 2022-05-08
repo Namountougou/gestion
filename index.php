@@ -23,7 +23,6 @@
         <div class="col-md-12 coco">
             <h3 class="con">
             <a href="admin_php/user.php">se connecter</a></h3>
-            <h3 class="ins"><a href="admin_php/enregistad.php">s'inscrire</a></h3>
             <h3 class="ins" id="sinscrire"><a href="admin_php/enregistad.php">s'inscrire</a></h3>
           
         </div>
@@ -43,7 +42,7 @@
       </div>
     </div>
     <?php
-    include './connect_db.php';
+  
     include './abonnes_php/connect_db.php';
     $req=$base->prepare('SELECT COUNT(*) FROM administrateurs');
     $req->execute();
