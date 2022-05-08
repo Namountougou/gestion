@@ -12,6 +12,7 @@
     <title>document</title>
   </head>
   <body>
+  
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-xs-4 logo">
@@ -23,6 +24,7 @@
             <h3 class="con">
             <a href="admin_php/user.php">se connecter</a></h3>
             <h3 class="ins"><a href="admin_php/enregistad.php">s'inscrire</a></h3>
+            <h3 class="ins" id="sinscrire"><a href="admin_php/enregistad.php">s'inscrire</a></h3>
           
         </div>
       </div>
@@ -42,6 +44,7 @@
     </div>
     <?php
     include './connect_db.php';
+    include './abonnes_php/connect_db.php';
     $req=$base->prepare('SELECT COUNT(*) FROM administrateurs');
     $req->execute();
     $nb=$req->fetchColumn();

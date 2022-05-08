@@ -10,6 +10,9 @@
     <title>enregistrement_ad</title>
 </head>
 <body>
+
+     
+
 <div class="container-fluid tete">
         <div class="row teta">
             <div class=" col-md-3 offset-md-1 logo1">
@@ -34,6 +37,14 @@
                     confirmer pass <input type="passwords" name="pconf" id="" class="inputpasswords1">
                     
                     <button type="submit" value="fermer" name="fermer" id="fermer"><a  class="buton" href="../index.html">Fermer</a></button> 
+                <form action="admin.php" method="post">
+                    Nom<input type="text" name="nom" id="" class="inputnom" required=""><br>
+                    Prenom <input type="text" name="prenom" id="" class="inputprenom" required><br>
+                    E-mail <input type="email" name="email" id="" class="inputmail" required><br>
+                     Passwords<input type="passwords" name="passwords" id="" class="inputpasswords" required><br>
+                    confirmer pass <input type="passwords" name="pconf" id="" class="inputpasswords1" required>
+                    
+                    <button type="submit" value="fermer" name="fermer" id="fermer"><a  class="buton" href="../index.php">Fermer</a></button> 
                     <span class="buton1"><button type="submit" value="Valider" name="valider" id="Valider"> Valider</button></span>
 
                 </form>

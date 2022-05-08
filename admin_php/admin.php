@@ -2,6 +2,8 @@
 
    <?php
 include '../php/connect_db.php';
+session_start();
+include '../abonnes_php/connect_db.php';
 
 $valider= $_POST["valider"];
      $nom=$_POST["nom"];
@@ -10,6 +12,10 @@ $valider= $_POST["valider"];
      $passwords=$_POST["passwords"];
      $pconf=$_POST["pconf"];
     
+     $passwords=md5($_POST["passwords"]);
+     $pconf=$_POST["pconf"];
+    $_SESSION['nom']=$nom;
+    $_SESSION['email']=$email;
      $req = $base->prepare('INSERT INTO administrateurs(nom,prenom,email,passwords)
                         VALUES (:nom,:prenom,:email,:passwords)');
 
